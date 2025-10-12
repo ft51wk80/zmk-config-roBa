@@ -89,10 +89,10 @@
 
         ohnishi {
             bindings = <
-&kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                      &kp F        &kp W  &kp R  &kp Y  &lt_to_layer_0 5 P
-&kp E             &kp I             &kp A         &kp O                        &kp MINUS      &kp LS(LG(S))                    &kp ESCAPE      &kp K        &kp T  &kp N  &kp S  &kp H
-&kp Z             &kp X             &kp C         &kp V                        &kp SEMICOLON  &kp TAB                          &kp LEFT_SHIFT  &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_1  &lt 2 SPACE    &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE   &lt 4 ENTER                       &kp DEL
+&kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                   &kp F        &kp W  &kp R  &kp Y  &lt_to_layer_0 5 P
+&kp E             &kp I             &kp A         &kp O                        &kp MINUS    &mkp MB3                         &kp ESCAPE     &kp K        &kp T  &kp N  &kp S  &kp H
+&kp Z             &kp X             &kp C         &kp V                        &none        &kp LEFT_SHIFT                   &kp TAB        &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_1  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &lt 4 ENTER                       &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -100,10 +100,10 @@
 
         SYMBOLS {
             bindings = <
-&kp ESCAPE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans             &trans
-&kp TILDE   &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SINGLE_QUOTE   &kp BACKSLASH
-&kp GRAVE   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans                 &trans      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE
-&trans      &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                                         &trans
+&kp PERCENT      &kp ASTERISK  &kp EQUAL             &kp AMPERSAND          &kp DOLLAR                       &none      &kp LESS_THAN     &kp GREATER_THAN   &kp PIPE           &kp BACKSLASH
+&kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LCTRL   &none      &none     &none      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
+&kp SLASH        &kp TILDE     &kp AT_SIGN           &kp HASH               &none       &none      &kp PLUS  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON      &kp COLON
+&none            &none         &none                 &none                  &none       &none      &none     &none                                                              &none
             >;
         };
 
@@ -118,10 +118,10 @@
 
         ARROW {
             bindings = <
-&none             &none                   &kp UP_ARROW    &none                    &none                      &none     &none             &kp UP_ARROW  &none              &none
-&kp HOME          &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &none      &none  &kp HOME  &kp LEFT          &kp DOWN      &kp RIGHT          &kp END
-&kp LEFT_SHIFT    &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &none    &none      &none  &none     &kp LS(LG(LEFT))  &none         &kp LG(LS(RIGHT))  &kp LEFT_SHIFT
-&kp LEFT_COMMAND  &none                   &none           &none                    &none    &none      &none  &none                                                        &kp LEFT_COMMAND
+&none             &none             &kp UP_ARROW    &none            &none                             &none  &none     &kp UP_ARROW  &none      &none
+&none             &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none               &none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&none             &none             &none           &none            &none  &kp LEFT_SHIFT      &none  &none  &none     &none         &none      &none
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT    &none            &none  &none               &none  &none                                     &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -129,10 +129,10 @@
 
         OPERATION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans            &trans            &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                        &trans
+&none  &none  &none  &none  &none                    &none          &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
+&none  &none  &none  &none  &none  &none      &none  &kp LG(PLUS)   &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
+&none  &none  &none  &none  &none  &none      &none  &kp LG(MINUS)  &kp LG(Q)         &kp LG(W)         &none             &none
+&none  &none  &none  &none  &none  &none      &none  &none                                                                &none
             >;
         };
 
