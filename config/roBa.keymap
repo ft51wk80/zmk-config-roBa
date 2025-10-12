@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/bt.h>
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 60
 
 &mt {
@@ -147,10 +147,10 @@
 
         OPERATION {
             bindings = <
-&trans  &none  &none  &none  &none                    &none          &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
-&none   &none  &none  &none  &none  &none      &none  &kp LG(PLUS)   &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
-&none   &none  &none  &none  &none  &none      &none  &kp LG(MINUS)  &kp LG(Q)         &kp LG(W)         &none             &none
-&none   &none  &none  &none  &none  &none      &none  &none                                                                &none
+&none  &none  &none  &none  &none                    &none          &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
+&none  &none  &none  &none  &none  &none      &none  &kp LG(PLUS)   &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
+&none  &none  &none  &none  &none  &none      &none  &kp LG(MINUS)  &kp LG(Q)         &kp LG(W)         &none             &none
+&none  &none  &none  &none  &none  &none      &none  &none                                                                &none
             >;
         };
     };
