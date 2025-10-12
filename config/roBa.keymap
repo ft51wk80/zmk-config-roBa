@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 60
+#define MOUSE 4
 #define SCROLL 5
-#define MOUSE 6
 
 &mt {
     flavor = "balanced";
@@ -76,7 +76,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 6>;
+                <&sl 4>;
 
             label = "MKP_EXIT_AML";
         };
