@@ -63,21 +63,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
-        mkp_exit_AML: mkp_exit_AML {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&sl 4>;
-
-            label = "MKP_EXIT_AML";
-        };
     };
 
     behaviors {
@@ -104,13 +89,22 @@
 
         ohnishi {
             bindings = <
-&kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                      &kp F      &kp W  &kp R  &kp Y  &lt_to_layer_0 5 P
-&kp E             &kp I             &kp A         &kp O                        &kp MINUS      &kp LS(LG(S))                    &kp ESCAPE      &kp K      &kp T  &kp N  &kp S  &kp H
-&kp Z             &kp X             &kp C         &kp V                        &kp SEMICOLON  &kp TAB                          &kp LEFT_SHIFT  &kp G      &kp D  &kp M  &kp J  &kp B
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_1  &lt 1 SPACE    &lt_to_layer_0 4 LANGUAGE_2      &kp BACKSPACE   &kp ENTER                       &kp DEL
+&kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                      &kp F        &kp W  &kp R  &kp Y  &lt_to_layer_0 5 P
+&kp E             &kp I             &kp A         &kp O                        &kp MINUS      &kp LS(LG(S))                    &kp ESCAPE      &kp K        &kp T  &kp N  &kp S  &kp H
+&kp Z             &kp X             &kp C         &kp V                        &kp SEMICOLON  &kp TAB                          &kp LEFT_SHIFT  &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_1  &lt 2 SPACE    &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE   &lt 4 ENTER                       &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        SYMBOL {
+            bindings = <
+&kp        &kp AMPERSAND    &kp  &kp  &kp                &kp  &kp  &kp  &kp  &kp
+&kp TILDE  &kp DOLLAR       &kp  &kp  &kp  &kp      &kp  &kp  &kp  &kp  &kp  &kp
+&kp        &kp EXCLAMATION  &kp  &kp  &kp  &kp      &kp  &kp  &kp  &kp  &kp  &kp
+&kp        &kp              &kp  &kp  &kp  &kp      &kp  &kp                 &kp
+            >;
         };
 
         NUM_FUNCTIONS {
@@ -119,24 +113,6 @@
 &none                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none      &none  &none  &kp F5  &kp F6   &kp F7   &kp F8
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none      &none  &none  &kp F1  &kp F2   &kp F3   &kp F4
 &none                       &none            &none            &none            &none  &none      &none  &none                            &none
-            >;
-        };
-
-        SYMBOL {
-            bindings = <
-&none  &none  &none  &none  &none                    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none      &none  &none                       &none
-            >;
-        };
-
-        OPERATION {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans            &trans            &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                        &trans
             >;
         };
 
@@ -151,6 +127,15 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
+        OPERATION {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans            &trans            &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                        &trans
+            >;
+        };
+
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
@@ -162,10 +147,10 @@
 
         MOUSE {
             bindings = <
-&kp LS(LG(TAB))  &kp PAGE_UP    &kp LG(TAB)  &none  &none                    &none  &none  &kp LG(LS(TAB))  &kp PAGE_UP    &kp LG(TAB)
-&mkp MB2         &mkp MB3       &mkp MB1     &none  &none  &none      &none  &none  &none  &mkp MB1         &mkp MB3       &mkp MB2
-&mkp MB5         &kp PAGE_DOWN  &mkp MB4     &none  &none  &none      &none  &none  &none  &mkp MB4         &kp PAGE_DOWN  &mkp MB5
-&none            &none          &none        &none  &none  &none      &none  &none                                         &none
+&none  &kp LG(LS(TAB))  &kp LG(PG_UP)  &kp LG(TAB)  &none                    &none  &kp LG(LS(TAB))  &kp PG_UP      &kp LG(TAB)  &none
+&none  &mkp MB2         &mkp MB3       &mkp MB1     &none  &none      &none  &none  &mkp MB1         &mkp MB3       &mkp MB2     &none
+&none  &mkp MB5         &kp PAGE_DOWN  &mkp MB4     &none  &none      &none  &none  &mkp MB4         &kp PAGE_DOWN  &mkp MB5     &none
+&none  &none            &none          &none        &none  &none      &none  &none                                               &none
             >;
         };
     };
