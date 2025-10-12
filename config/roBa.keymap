@@ -3,15 +3,17 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 60
-#define SCROLL 5
-#define MOUSE 6
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
 
 &sl { release-after-ms = <250>; };
+
+&trackball {
+    scroll-layers = <5>;
+    automouse-layer = <6>;
+};
 
 / {
     combos {
@@ -96,8 +98,6 @@
 &kp Z             &kp X             &kp C         &kp V                        &none                   &kp LEFT_SHIFT                   &kp TAB        &kp G                   &kp D  &kp M  &kp J  &kp B
 &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_1  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &lt_to_layer_0 4 ENTER                       &none
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         SYMBOLS {
