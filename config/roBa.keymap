@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 60
+#define SCROLL 5
+#define MOUSE 6
 
 &mt {
     flavor = "balanced";
@@ -10,11 +12,6 @@
 };
 
 &sl { release-after-ms = <250>; };
-
-&trackball {
-    scroll-layers = <5>;
-    automouse-layer = <6>;
-};
 
 / {
     combos {
