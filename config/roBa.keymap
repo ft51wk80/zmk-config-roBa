@@ -59,6 +59,20 @@
 
             label = "MKP_EXIT_AML";
         };
+        
+        bt_sel_0_win: bt_sel_0_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&bt BT_SEL 0>;
+            label = "BT0_WIN_DEFAULT";
+        };
+
+        bt_sel_1_mac: bt_sel_1_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1>, <&bt BT_SEL 1>;
+            label = "BT1_MAC_DEFAULT";
+        };
     };
 
     behaviors {
@@ -122,7 +136,7 @@
 
         OPERATIONS_WIN {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &none                            &none     &kp LG(TAB)       &kp LC(TAB)       &none             &none
+&bt_sel_0_win  &bt_sel_1_mac  &none  &none  &none                            &none     &kp LG(TAB)       &kp LC(TAB)       &none             &none
 &none         &none         &none  &none  &none  &none      &kp LC(PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
 &none         &none         &none  &none  &none  &none      &kp LC(MINUS)  &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
 &none         &none         &none  &none  &none  &none      &none          &none                                                           &none
@@ -140,7 +154,7 @@
 
         OPERATION_MAC {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &none                            &none     &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
+&bt_sel_0_win  &bt_sel_1_mac  &none  &none  &none                            &none     &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
 &none         &none         &none  &none  &none  &none      &kp LG(PLUS)   &mkp MB4  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
 &none         &none         &none  &none  &none  &none      &kp LG(MINUS)  &mkp MB5  &kp LG(Q)         &kp LG(W)         &none             &none
 &none         &none         &none  &none  &none  &none      &none          &none                                                           &none
