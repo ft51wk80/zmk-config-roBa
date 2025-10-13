@@ -11,8 +11,8 @@
 &sl { release-after-ms = <150>; };
 
 &trackball {
-    automouse-layer = <6>;
-    scroll-layers = <5>;
+    automouse-layer = <5>;
+    scroll-layers = <6>;
 
     // arrows {
     //     layers = <3>;
@@ -112,6 +112,15 @@
 &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT    &none            &none  &none      &none  &none                                     &none
             >;
         };
+        
+        MOUSE {
+            bindings = <
+&to_layer_0 Q      &to_layer_0 L         &to_layer_0 U         &to_layer_0 COMMA       &to_layer_0 PERIOD                                                     &to_layer_0 F      &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
+&to_layer_0 E      &mkp_exit_AML MB2     &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &to_layer_0 DEL             &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3   &mkp_exit_AML MB2  &to_layer_0 H
+&to_layer_0 Z      &to_layer_0 X         &lt_to_layer_0 5 C    &to_layer_0 V           &to_layer_0 F7      &none                       &to_layer_0 TAB        &to_layer_0 G      &to_layer_0 D      &lt_to_layer_0 5 M  &to_layer_0 J      &to_layer_0 B
+&to_layer_0 LCTRL  &to_layer_0 LEFT_WIN  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                            &none
+            >;
+        };
 
         SCROLL {
             bindings = <
@@ -119,15 +128,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML LCLK  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans              &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                      &trans
-            >;
-        };
-
-        MOUSE {
-            bindings = <
-&to_layer_0 Q      &to_layer_0 L         &to_layer_0 U         &to_layer_0 COMMA       &to_layer_0 PERIOD                                                     &to_layer_0 F      &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
-&to_layer_0 E      &mkp_exit_AML MB2     &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &to_layer_0 DEL             &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3   &mkp_exit_AML MB2  &to_layer_0 H
-&to_layer_0 Z      &to_layer_0 X         &lt_to_layer_0 5 C    &to_layer_0 V           &to_layer_0 F7      &none                       &to_layer_0 TAB        &to_layer_0 G      &to_layer_0 D      &lt_to_layer_0 5 M  &to_layer_0 J      &to_layer_0 B
-&to_layer_0 LCTRL  &to_layer_0 LEFT_WIN  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                            &none
             >;
         };
     };
