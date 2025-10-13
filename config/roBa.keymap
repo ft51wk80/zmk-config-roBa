@@ -82,7 +82,7 @@
 &kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R  &kp Y  &lt_to_layer_0 5 P
 &kp E             &kp I             &kp A         &kp O                        &kp MINUS               &none                            &kp ESCAPE     &kp K                   &kp T  &kp N  &kp S  &kp H
 &kp Z             &kp X             &kp C         &kp V                        &none                   &kp LEFT_SHIFT                   &kp TAB        &kp G                   &kp D  &kp M  &kp J  &kp B
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 2 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 6 ENTER                       &lt 5 A
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 2 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 6 ENTER                       &none
             >;
         };
 
@@ -117,10 +117,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q             &kp LG(LS(TAB))           &kp LG(PG_UP)         &kp LG(TAB)             &to_layer_0 PERIOD                                                     &to_layer_0 F      &kp LG(LS(TAB))    &kp PG_UP          &kp LG(TAB)        &to_layer_0 P
-&to_layer_0 E             &mkp_exit_AML MB2         &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &none                       &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 H
-&to_layer_0 Z             &mkp MB5                  &kp PAGE_DOWN         &mkp MB4                &none               &to_layer_0 LEFT_SHIFT      &to_layer_0 TAB        &to_layer_0 G      &mkp MB4           &kp PAGE_DOWN      &mkp MB5           &to_layer_0 B
-&to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                           &none
+&to_layer_0 Q             &kp LG(LS(TAB))           &to_layer_0 U         &kp LG(TAB)             &to_layer_0 PERIOD                                                     &to_layer_0 F      &kp LG(LS(TAB))    &to_layer_0 R       &kp LG(TAB)        &to_layer_0 P
+&to_layer_0 E             &mkp_exit_AML MB2         &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &none                       &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3   &mkp_exit_AML MB2  &to_layer_0 H
+&to_layer_0 Z             &mkp MB5                  &lt_to_layer_0 5 C    &mkp MB4                &none               &to_layer_0 LEFT_SHIFT      &to_layer_0 TAB        &to_layer_0 G      &mkp MB4           &lt_to_layer_0 5 M  &mkp MB5           &to_layer_0 B
+&to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                            &none
             >;
         };
 
