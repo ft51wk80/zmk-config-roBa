@@ -63,14 +63,14 @@
         bt_sel_0_win: bt_sel_0_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 0>;
+            bindings = <&to 0 &bt BT_SEL 0>;
             label = "BT0_WIN_DEFAULT";
         };
 
         bt_sel_1_mac: bt_sel_1_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 1>;
+            bindings = <&to 1 &bt BT_SEL 1>;
             label = "BT1_MAC_DEFAULT";
         };
     };
@@ -80,15 +80,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0_WIN>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-        
-        lt_to_layer_1: lt_to_layer_1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_1";
-            bindings = <&mo>, <&to_layer_1_MAC>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -111,8 +102,8 @@
             bindings = <
 &kp Q             &kp L      &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R               &kp Y  &kp P
 &kp E             &kp I      &kp A         &kp O                        &kp MINUS               &kp DELETE                       &kp ESCAPE     &kp K                   &kp T  &kp N               &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                        &kp F7                  &none                            &kp TAB        &kp G                   &kp D  &lt_to_layer_1 8 M  &kp J  &mt LEFT_SHIFT B
-&kp LEFT_COMMAND  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_1 2 LANGUAGE_2  &lt_to_layer_1 3 SPACE  &lt_to_layer_1 6 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_1 7 ENTER                                    &none
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                        &kp F7                  &none                            &kp TAB        &kp G                   &kp D  &lt_to_layer_0 8 M  &kp J  &mt LEFT_SHIFT B
+&kp LEFT_COMMAND  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 7 ENTER                                    &none
             >;
         };
 
