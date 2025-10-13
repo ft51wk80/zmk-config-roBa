@@ -38,8 +38,6 @@
             label = "TO_LAYER_0";
         };
 
-        
-
         mkp_exit_AML_WIN: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -58,24 +56,21 @@
         kp_exit_AML: kp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings =
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&sl 6>;
-
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &sl 6>;
             label = "KP_EXIT_AML";
         };
 
         bt_sel_0_win: bt_sel_0_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&tog 11>;
+            bindings = <&bt BT_SEL 0 &tog 11>;
             label = "BT0_WIN_DEFAULT";
         };
 
         bt_sel_1_mac: bt_sel_1_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&tog 11>;
+            bindings = <&bt BT_SEL 1 &tog 11>;
             label = "BT1_MAC_DEFAULT";
         };
     };
@@ -89,8 +84,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-        
 
         lt_exit_AML: lt_exit_AML {
             compatible = "zmk,behavior-hold-tap";
@@ -109,6 +102,7 @@
             compatible = "zmk,key-overrides";
 
             // Mac時(レイヤー11 ON)に Ctrl系を Command系へ置換
+
             ko_mac_tab: ko_mac_tab {
                 compatible = "zmk,key-override";
                 when-layers = <11>;
@@ -183,13 +177,12 @@
 
         OPERATIONS {
             bindings = <
-&bt_sel_0_win  &bt_sel_1_mac  &none  &none  &none                            &none     &kp LG(TAB)       &kp LC(TAB)       &none             &none
-&bt BT_SEL 0   &bt BT_SEL 1   &none  &none  &none  &none      &kp LC(PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
-&none          &none          &none  &none  &none  &none      &kp LC(MINUS)  &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
-&bt BT_CLR     &none          &none  &none  &none  &none      &none          &none                                                           &none
+&bt_sel_0_win  &bt_sel_1_mac   &none  &none  &none                            &none     &kp LG(TAB)       &kp LC(TAB)       &none             &none
+&bt BT_SEL 0   &bt BT_SEL 1    &none  &none  &none  &none      &kp LC(PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&none          &none           &none  &none  &none  &none      &kp LC(MINUS)  &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
+&bt BT_CLR     &bt BT_CLR_ALL  &none  &none  &none  &none      &none          &none                                                           &none
             >;
         };
-
 
         SCROLL {
             bindings = <
@@ -202,10 +195,10 @@
 
         MOUSE {
             bindings = <
-&kp_exit_AML Q      &kp_exit_AML L                  &kp_exit_AML U                  &kp_exit_AML COMMA              &kp_exit_AML PERIOD                                     &kp_exit_AML F      &kp_exit_AML W                  &kp_exit_AML R                  &kp_exit_AML Y                  &kp_exit_AML P
-&kp_exit_AML E      &mkp_exit_AML_WIN MB2            &mkp_exit_AML_WIN MB3            &mkp_exit_AML_WIN MB1            &kp_exit_AML MINUS   &kp_exit_AML DEL             &kp_exit_AML ESCAPE     &kp_exit_AML K      &mkp_exit_AML_WIN MB1  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB2  &kp_exit_AML H
-&kp_exit_AML Z      &kp_exit_AML X                  &lt_exit_AML 5 C                 &kp_exit_AML V                  &kp_exit_AML F7      &none                        &kp_exit_AML TAB        &kp_exit_AML G      &kp_exit_AML D                  &lt_exit_AML 5 M                &kp_exit_AML J                  &kp_exit_AML B
-&kp_exit_AML LCTRL  &kp_exit_AML LEFT_GUI           &kp_exit_AML LEFT_ALT           &kp_exit_AML LANGUAGE_1         &kp_exit_AML SPACE   &kp_exit_AML LANGUAGE_2      &kp_exit_AML BACKSPACE  &kp_exit_AML ENTER                                                                       &none
+&kp_exit_AML Q      &kp_exit_AML L         &kp_exit_AML U         &kp_exit_AML COMMA       &kp_exit_AML PERIOD                                                       &kp_exit_AML F      &kp_exit_AML W         &kp_exit_AML R         &kp_exit_AML Y         &kp_exit_AML P
+&kp_exit_AML E      &mkp_exit_AML_WIN MB2  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB1    &kp_exit_AML MINUS   &kp_exit_AML DEL             &kp_exit_AML ESCAPE     &kp_exit_AML K      &mkp_exit_AML_WIN MB1  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB2  &kp_exit_AML H
+&kp_exit_AML Z      &kp_exit_AML X         &lt_exit_AML 5 C       &kp_exit_AML V           &kp_exit_AML F7      &none                        &kp_exit_AML TAB        &kp_exit_AML G      &kp_exit_AML D         &lt_exit_AML 5 M       &kp_exit_AML J         &kp_exit_AML B
+&kp_exit_AML LCTRL  &kp_exit_AML LEFT_GUI  &kp_exit_AML LEFT_ALT  &kp_exit_AML LANGUAGE_1  &kp_exit_AML SPACE   &kp_exit_AML LANGUAGE_2      &kp_exit_AML BACKSPACE  &kp_exit_AML ENTER                                                                       &none
             >;
         };
     };
