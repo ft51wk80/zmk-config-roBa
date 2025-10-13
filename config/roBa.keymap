@@ -80,12 +80,10 @@
         ohnishi {
             bindings = <
 &kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R               &kp Y  &kp P
-&kp E             &kp I             &kp A         &kp O                        &kp MINUS               &none                            &kp ESCAPE     &kp K                   &kp T  &kp N               &kp S  &kp H
-&kp Z             &kp X             &kp C         &kp V                        &none                   &kp LEFT_SHIFT                   &kp TAB        &kp G                   &kp D  &lt_to_layer_0 5 M  &kp J  &kp B
+&kp E             &kp I             &kp A         &kp O                        &kp MINUS               &kp DELETE                       &kp ESCAPE     &kp K                   &kp T  &kp N               &kp S  &kp H
+&kp Z             &kp X             &kp C         &kp V                        &kp F7                  &kp LEFT_SHIFT                   &kp TAB        &kp G                   &kp D  &lt_to_layer_0 5 M  &kp J  &kp B
 &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 2 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 6 ENTER                                    &none
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         SYMBOLS {
@@ -119,9 +117,9 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q             &kp LG(LS(TAB))           &to_layer_0 U         &kp LG(TAB)             &to_layer_0 PERIOD                                                     &to_layer_0 F      &kp LG(LS(TAB))    &to_layer_0 R       &kp LG(TAB)        &to_layer_0 P
-&to_layer_0 E             &mkp_exit_AML MB2         &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &none                       &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3   &mkp_exit_AML MB2  &to_layer_0 H
-&to_layer_0 Z             &mkp MB5                  &lt_to_layer_0 5 C    &mkp MB4                &none               &to_layer_0 LEFT_SHIFT      &to_layer_0 TAB        &to_layer_0 G      &mkp MB4           &lt_to_layer_0 5 M  &mkp MB5           &to_layer_0 B
+&to_layer_0 Q             &to_layer_0 L             &to_layer_0 U         &to_layer_0 COMMA       &to_layer_0 PERIOD                                                     &to_layer_0 F      &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
+&to_layer_0 E             &mkp_exit_AML MB2         &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &to_layer_0 DEL             &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3   &mkp_exit_AML MB2  &to_layer_0 H
+&to_layer_0 Z             &to_layer_0 X             &lt_to_layer_0 5 C    &to_layer_0 V           &to_layer_0 F7      &to_layer_0 LEFT_SHIFT      &to_layer_0 TAB        &to_layer_0 G      &to_layer_0 D      &lt_to_layer_0 5 M  &to_layer_0 J      &to_layer_0 B
 &to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                            &none
             >;
 
@@ -139,10 +137,10 @@
 
         OPERATION {
             bindings = <
-&none  &none  &none  &none  &none                    &none          &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
-&none  &none  &none  &none  &none  &none      &none  &kp LG(PLUS)   &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
-&none  &none  &none  &none  &none  &none      &none  &kp LG(MINUS)  &kp LG(Q)         &kp LG(W)         &none             &none
-&none  &none  &none  &none  &none  &none      &none  &none                                                                &none
+&none  &none  &none  &none  &none                            &none     &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
+&none  &none  &none  &none  &none  &none      &kp LG(PLUS)   &mkp MB4  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
+&none  &none  &none  &none  &none  &none      &kp LG(MINUS)  &mkp MB5  &kp LG(Q)         &kp LG(W)         &none             &none
+&none  &none  &none  &none  &none  &none      &none          &none                                                           &none
             >;
         };
     };
