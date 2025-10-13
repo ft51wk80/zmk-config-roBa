@@ -30,6 +30,46 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    key_overrides {
+        compatible = "zmk,key-overrides";
+
+        // Mac時(レイヤー11 ON)に Ctrl系を Command系へ置換
+        ko_mac_tab: ko_mac_tab {
+            compatible = "zmk,key-override";
+            when-layers = <11>;
+            from = <&kp LC(TAB)>;
+            to = <&kp LG(TAB)>;
+        };
+
+        ko_mac_zoom_in: ko_mac_zoom_in {
+            compatible = "zmk,key-override";
+            when-layers = <11>;
+            from = <&kp LC(PLUS)>;
+            to = <&kp LG(PLUS)>;
+        };
+
+        ko_mac_zoom_out: ko_mac_zoom_out {
+            compatible = "zmk,key-override";
+            when-layers = <11>;
+            from = <&kp LC(MINUS)>;
+            to = <&kp LG(MINUS)>;
+        };
+
+        ko_mac_close: ko_mac_close {
+            compatible = "zmk,key-override";
+            when-layers = <11>;
+            from = <&kp LC(Q)>;
+            to = <&kp LG(Q)>;
+        };
+
+        ko_mac_new: ko_mac_new {
+            compatible = "zmk,key-override";
+            when-layers = <11>;
+            from = <&kp LC(W)>;
+            to = <&kp LG(W)>;
+        };
+    };
+
     macros {
         to_layer_0_WIN: to_layer_0_WIN {
             compatible = "zmk,behavior-macro-one-param";
@@ -97,47 +137,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-        key_overrides {
-            compatible = "zmk,key-overrides";
-
-            // Mac時(レイヤー11 ON)に Ctrl系を Command系へ置換
-
-            ko_mac_tab: ko_mac_tab {
-                compatible = "zmk,key-override";
-                when-layers = <11>;
-                from = <&kp LC(TAB)>;
-                to = <&kp LG(TAB)>;
-            };
-
-            ko_mac_zoom_in: ko_mac_zoom_in {
-                compatible = "zmk,key-override";
-                when-layers = <11>;
-                from = <&kp LC(PLUS)>;
-                to = <&kp LG(PLUS)>;
-            };
-
-            ko_mac_zoom_out: ko_mac_zoom_out {
-                compatible = "zmk,key-override";
-                when-layers = <11>;
-                from = <&kp LC(MINUS)>;
-                to = <&kp LG(MINUS)>;
-            };
-
-            ko_mac_close: ko_mac_close {
-                compatible = "zmk,key-override";
-                when-layers = <11>;
-                from = <&kp LC(Q)>;
-                to = <&kp LG(Q)>;
-            };
-
-            ko_mac_new: ko_mac_new {
-                compatible = "zmk,key-override";
-                when-layers = <11>;
-                from = <&kp LC(W)>;
-                to = <&kp LG(W)>;
-            };
-        };
 
         DEFAULT {
             bindings = <
