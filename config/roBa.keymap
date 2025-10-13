@@ -106,10 +106,10 @@
 
         ohnishi {
             bindings = <
-&kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R  &kp Y  &lt_to_layer_0 4 P
+&kp Q             &kp L             &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R  &kp Y  &lt_to_layer_0 5 P
 &kp E             &kp I             &kp A         &kp O                        &kp MINUS               &mkp MB3                         &kp ESCAPE     &kp K                   &kp T  &kp N  &kp S  &kp H
 &kp Z             &kp X             &kp C         &kp V                        &none                   &kp LEFT_SHIFT                   &kp TAB        &kp G                   &kp D  &kp M  &kp J  &kp B
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_1  &lt_to_layer_0 5 SPACE  &lt_to_layer_0 2 LANGUAGE_2      &kp BACKSPACE  &lt_to_layer_0 6 ENTER                       &none
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 2 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 6 ENTER                       &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -135,6 +135,15 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
+        NUM {
+            bindings = <
+&none                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                    &none  &kp F9  &kp F10  &kp F11  &kp F12
+&none                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none      &none  &none  &kp F5  &kp F6   &kp F7   &kp F8
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none      &none  &none  &kp F1  &kp F2   &kp F3   &kp F4
+&none                       &none            &none            &none            &none  &none      &none  &none                            &none
+            >;
+        };
+
         MOUSE {
             bindings = <
 &to_layer_0 Q             &kp LG(LS(TAB))           &kp LG(PG_UP)         &kp LG(TAB)             &to_layer_0 PERIOD                                                     &to_layer_0 F      &kp LG(LS(TAB))    &kp PG_UP          &kp LG(TAB)        &to_layer_0 P
@@ -150,15 +159,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML LCLK  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans              &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                      &trans
-            >;
-        };
-
-        NUM {
-            bindings = <
-&none                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                    &none  &kp F9  &kp F10  &kp F11  &kp F12
-&none                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none      &none  &none  &kp F5  &kp F6   &kp F7   &kp F8
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none      &none  &none  &kp F1  &kp F2   &kp F3   &kp F4
-&none                       &none            &none            &none            &none  &none      &none  &none                            &none
             >;
         };
 
