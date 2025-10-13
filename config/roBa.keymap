@@ -84,6 +84,8 @@
 &kp Z             &kp X             &kp C         &kp V                        &none                   &kp LEFT_SHIFT                   &kp TAB        &kp G                   &kp D  &kp M  &kp J  &kp B
 &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 2 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 6 ENTER                       &none
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SYMBOLS {
@@ -122,6 +124,8 @@
 &to_layer_0 Z             &mkp MB5                  &lt_to_layer_0 5 C    &mkp MB4                &none               &to_layer_0 LEFT_SHIFT      &to_layer_0 TAB        &to_layer_0 G      &mkp MB4           &lt_to_layer_0 5 M  &mkp MB5           &to_layer_0 B
 &to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                            &none
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
