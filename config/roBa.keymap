@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 60
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -11,8 +12,20 @@
 &sl { release-after-ms = <250>; };
 
 &trackball {
+    automouse-layer = <4>;
     scroll-layers = <5>;
-    automouse-layer = <6>;
+
+    // arrows {
+    //     layers = <3>;
+    //     bindings =
+    //         <&kp RIGHT_ARROW>,
+    //         <&kp LEFT_ARROW>,
+    //         <&kp UP_ARROW>,
+    //         <&kp DOWN_ARROW>;
+    //     tick = <10>;
+    //     wait-ms = <5>;
+    //     tap-ms = <5>;
+    // };
 };
 
 / {
@@ -111,16 +124,7 @@
             >;
         };
 
-        NUM_FUNCTIONS {
-            bindings = <
-&none                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                    &none  &kp F9  &kp F10  &kp F11  &kp F12
-&none                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none      &none  &none  &kp F5  &kp F6   &kp F7   &kp F8
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none      &none  &none  &kp F1  &kp F2   &kp F3   &kp F4
-&none                       &none            &none            &none            &none  &none      &none  &none                            &none
-            >;
-        };
-
-        ARROW {
+        ARROWS {
             bindings = <
 &none             &none             &kp UP_ARROW    &none            &none                             &none  &none     &kp UP_ARROW  &none      &none
 &none             &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none               &none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none
@@ -131,12 +135,12 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        OPERATION {
+        MOUSE {
             bindings = <
-&none  &none  &none  &none  &none                    &none          &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
-&none  &none  &none  &none  &none  &none      &none  &kp LG(PLUS)   &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
-&none  &none  &none  &none  &none  &none      &none  &kp LG(MINUS)  &kp LG(Q)         &kp LG(W)         &none             &none
-&none  &none  &none  &none  &none  &none      &none  &none                                                                &none
+&to_layer_0 Q             &kp LG(LS(TAB))           &kp LG(PG_UP)         &kp LG(TAB)             &to_layer_0 PERIOD                                                     &to_layer_0 F      &kp LG(LS(TAB))    &kp PG_UP          &kp LG(TAB)        &to_layer_0 P
+&to_layer_0 E             &mkp_exit_AML MB2         &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &none                       &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 H
+&to_layer_0 Z             &mkp MB5                  &kp PAGE_DOWN         &mkp MB4                &none               &to_layer_0 LEFT_SHIFT      &to_layer_0 TAB        &to_layer_0 G      &mkp MB4           &kp PAGE_DOWN      &mkp MB5           &to_layer_0 B
+&to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                           &none
             >;
         };
 
@@ -149,12 +153,21 @@
             >;
         };
 
-        MOUSE {
+        NUM_FUNCTIONS {
             bindings = <
-&to_layer_0 Q             &kp LG(LS(TAB))           &kp LG(PG_UP)         &kp LG(TAB)             &to_layer_0 PERIOD                                                     &to_layer_0 F      &kp LG(LS(TAB))    &kp PG_UP          &kp LG(TAB)        &to_layer_0 P
-&to_layer_0 E             &mkp_exit_AML MB2         &mkp_exit_AML MB3     &mkp_exit_AML MB1       &to_layer_0 MINUS   &none                       &to_layer_0 ESCAPE     &to_layer_0 K      &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 H
-&to_layer_0 Z             &mkp MB5                  &kp PAGE_DOWN         &mkp MB4                &none               &to_layer_0 LEFT_SHIFT      &to_layer_0 TAB        &to_layer_0 G      &mkp MB4           &kp PAGE_DOWN      &mkp MB5           &to_layer_0 B
-&to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LANGUAGE_1  &to_layer_0 SPACE   &to_layer_0 LANGUAGE_2      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                           &none
+&none                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                    &none  &kp F9  &kp F10  &kp F11  &kp F12
+&none                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none      &none  &none  &kp F5  &kp F6   &kp F7   &kp F8
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none      &none  &none  &kp F1  &kp F2   &kp F3   &kp F4
+&none                       &none            &none            &none            &none  &none      &none  &none                            &none
+            >;
+        };
+
+        OPERATION {
+            bindings = <
+&none  &none  &none  &none  &none                    &none          &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
+&none  &none  &none  &none  &none  &none      &none  &kp LG(PLUS)   &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
+&none  &none  &none  &none  &none  &none      &none  &kp LG(MINUS)  &kp LG(Q)         &kp LG(W)         &none             &none
+&none  &none  &none  &none  &none  &none      &none  &none                                                                &none
             >;
         };
     };
