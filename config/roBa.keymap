@@ -61,7 +61,7 @@
 &kp Q             &kp L         &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R               &kp Y  &kp P
 &kp E             &kp I         &kp A         &kp O                        &kp MINUS               &kp DELETE                       &kp ESCAPE     &kp K                   &kp T  &kp N               &kp S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp F7                  &none                            &kp TAB        &kp G                   &kp D  &lt_to_layer_0 5 M  &kp J  &mt LEFT_SHIFT B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 4 ENTER                                    &none
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 6 ENTER                                    &none
             >;
         };
 
