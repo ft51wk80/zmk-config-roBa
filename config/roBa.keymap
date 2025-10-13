@@ -63,14 +63,14 @@
         bt_sel_0_win: bt_sel_0_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&to 0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
             label = "BT0_WIN_DEFAULT";
         };
 
         bt_sel_1_mac: bt_sel_1_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&to 1>;
+            bindings = <&bt BT_SEL 1 &to 1>;
             label = "BT1_MAC_DEFAULT";
         };
     };
@@ -146,9 +146,9 @@
         OPERATIONS_WIN {
             bindings = <
 &bt_sel_0_win  &bt_sel_1_mac  &none  &none  &none                            &none     &kp LG(TAB)       &kp LC(TAB)       &none             &none
-&none          &none          &none  &none  &none  &none      &kp LC(PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&bt BT_SEL 0   &bt BT_SEL 1   &none  &none  &none  &none      &kp LC(PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
 &none          &none          &none  &none  &none  &none      &kp LC(MINUS)  &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
-&none          &none          &none  &none  &none  &none      &none          &none                                                           &none
+&bt BT_CLR     &none          &none  &none  &none  &none      &none          &none                                                           &none
             >;
         };
 
@@ -164,9 +164,9 @@
         OPERATION_MAC {
             bindings = <
 &bt_sel_0_win  &bt_sel_1_mac  &none  &none  &none                            &none     &kp LC(UP_ARROW)  &kp LG(TAB)       &none             &none
-&none          &none          &none  &none  &none  &none      &kp LG(PLUS)   &mkp MB4  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
+&bt BT_SEL 0   &bt BT_SEL 1   &none  &none  &none  &none      &kp LG(PLUS)   &mkp MB4  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
 &none          &none          &none  &none  &none  &none      &kp LG(MINUS)  &mkp MB5  &kp LG(Q)         &kp LG(W)         &none             &none
-&none          &none          &none  &none  &none  &none      &none          &none                                                           &none
+&bt BT_CLR     &none          &none  &none  &none  &none      &none          &none                                                           &none
             >;
         };
 
@@ -181,10 +181,10 @@
 
         MOUSE {
             bindings = <
-&kp Q                  &kp L                     &kp U                     &kp COMMA                   &kp PERIOD                                                                 &kp F                  &kp W                  &kp R                  &kp Y                  &kp P
-&kp E                  &mkp_exit_AML_WIN MB2     &mkp_exit_AML_WIN MB3     &mkp_exit_AML_WIN MB1       &kp MINUS              &kp DEL                         &kp ESCAPE              &kp K                  &mkp_exit_AML_WIN MB1  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB2  &kp H
-&kp Z                  &kp X                     &lt 8 C                    &kp V                       &kp F7                 &none                           &kp TAB                 &kp G                  &kp D                  &lt 8 M                 &kp J                  &kp B
-&kp LCTRL              &kp LEFT_WIN              &kp LEFT_ALT              &kp LANGUAGE_1              &kp SPACE              &kp LANGUAGE_2                  &kp BACKSPACE           &kp ENTER                                                                             &none
+&kp Q      &kp L                  &kp U                  &kp COMMA              &kp PERIOD                                     &kp F      &kp W                  &kp R                  &kp Y                  &kp P
+&kp E      &mkp_exit_AML_WIN MB2  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB1  &kp MINUS   &kp DEL             &kp ESCAPE     &kp K      &mkp_exit_AML_WIN MB1  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB2  &kp H
+&kp Z      &kp X                  &lt 8 C                &kp V                  &kp F7      &none               &kp TAB        &kp G      &kp D                  &lt 8 M                &kp J                  &kp B
+&kp LCTRL  &kp LEFT_WIN           &kp LEFT_ALT           &kp LANGUAGE_1         &kp SPACE   &kp LANGUAGE_2      &kp BACKSPACE  &kp ENTER                                                                       &none
             >;
         };
 
