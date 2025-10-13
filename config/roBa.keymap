@@ -63,14 +63,14 @@
         bt_sel_0_win: bt_sel_0_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &bt BT_SEL 0>;
+            bindings = <&bt BT_SEL 0>, <&to 0>;
             label = "BT0_WIN_DEFAULT";
         };
 
         bt_sel_1_mac: bt_sel_1_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &bt BT_SEL 1>;
+            bindings = <&bt BT_SEL 1>, <&to 1>;
             label = "BT1_MAC_DEFAULT";
         };
     };
@@ -80,6 +80,15 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0_WIN>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        lt_to_layer_1: lt_to_layer_1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_1";
+            bindings = <&mo>, <&to_layer_1_MAC>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -102,8 +111,8 @@
             bindings = <
 &kp Q             &kp L      &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R               &kp Y  &kp P
 &kp E             &kp I      &kp A         &kp O                        &kp MINUS               &kp DELETE                       &kp ESCAPE     &kp K                   &kp T  &kp N               &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                        &kp F7                  &none                            &kp TAB        &kp G                   &kp D  &lt_to_layer_0 8 M  &kp J  &mt LEFT_SHIFT B
-&kp LEFT_COMMAND  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 7 ENTER                                    &none
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                        &kp F7                  &none                            &kp TAB        &kp G                   &kp D  &lt_to_layer_1 8 M  &kp J  &mt LEFT_SHIFT B
+&kp LEFT_COMMAND  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_1 2 LANGUAGE_2  &lt_to_layer_1 3 SPACE  &lt_to_layer_1 6 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_1 7 ENTER                                    &none
             >;
         };
 
@@ -137,9 +146,9 @@
         OPERATIONS_WIN {
             bindings = <
 &bt_sel_0_win  &bt_sel_1_mac  &none  &none  &none                            &none     &kp LG(TAB)       &kp LC(TAB)       &none             &none
-&bt BT_SEL 0   &bt BT_SEL 1   &none  &none  &none  &none      &kp LC(PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&none          &none          &none  &none  &none  &none      &kp LC(PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
 &none          &none          &none  &none  &none  &none      &kp LC(MINUS)  &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
-&bt BT_CLR     &none          &none  &none  &none  &none      &none          &none                                                           &none
+&none          &none          &none  &none  &none  &none      &none          &none                                                           &none
             >;
         };
 
@@ -172,10 +181,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0_WIN Q      &to_layer_0_WIN L         &to_layer_0_WIN U         &to_layer_0_WIN COMMA       &to_layer_0_WIN PERIOD                                                             &to_layer_0_WIN F      &to_layer_0_WIN W      &to_layer_0_WIN R      &to_layer_0_WIN Y      &to_layer_0_WIN P
-&to_layer_0_WIN E      &mkp_exit_AML_WIN MB2     &mkp_exit_AML_WIN MB3     &mkp_exit_AML_WIN MB1       &to_layer_0_WIN MINUS   &to_layer_0_WIN DEL             &to_layer_0_WIN ESCAPE     &to_layer_0_WIN K      &mkp_exit_AML_WIN MB1  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB2  &to_layer_0_WIN H
-&to_layer_0_WIN Z      &to_layer_0_WIN X         &lt_to_layer_0 8 C        &to_layer_0_WIN V           &to_layer_0_WIN F7      &none                           &to_layer_0_WIN TAB        &to_layer_0_WIN G      &to_layer_0_WIN D      &lt_to_layer_0 8 M     &to_layer_0_WIN J      &to_layer_0_WIN B
-&to_layer_0_WIN LCTRL  &to_layer_0_WIN LEFT_WIN  &to_layer_0_WIN LEFT_ALT  &to_layer_0_WIN LANGUAGE_1  &to_layer_0_WIN SPACE   &to_layer_0_WIN LANGUAGE_2      &to_layer_0_WIN BACKSPACE  &to_layer_0_WIN ENTER                                                                       &none
+&kp Q                  &kp L                     &kp U                     &kp COMMA                   &kp PERIOD                                                                 &kp F                  &kp W                  &kp R                  &kp Y                  &kp P
+&kp E                  &mkp_exit_AML_WIN MB2     &mkp_exit_AML_WIN MB3     &mkp_exit_AML_WIN MB1       &kp MINUS              &kp DEL                         &kp ESCAPE              &kp K                  &mkp_exit_AML_WIN MB1  &mkp_exit_AML_WIN MB3  &mkp_exit_AML_WIN MB2  &kp H
+&kp Z                  &kp X                     &lt 8 C                    &kp V                       &kp F7                 &none                           &kp TAB                 &kp G                  &kp D                  &lt 8 M                 &kp J                  &kp B
+&kp LCTRL              &kp LEFT_WIN              &kp LEFT_ALT              &kp LANGUAGE_1              &kp SPACE              &kp LANGUAGE_2                  &kp BACKSPACE           &kp ENTER                                                                             &none
             >;
         };
 
