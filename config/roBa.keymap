@@ -8,11 +8,11 @@
     quick-tap-ms = <0>;
 };
 
-&sl { release-after-ms = <125>; };
+&sl { release-after-ms = <150>; };
 
 &trackball {
-    scroll-layers = <5>;
     automouse-layer = <6>;
+    scroll-layers = <5>;
 
     // arrows {
     //     layers = <3>;
