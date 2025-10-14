@@ -107,10 +107,10 @@
 
         SYMBOLS {
             bindings = <
-&none             &kp SLASH         &kp LS(N6)        &kp LS(MINUS)     &none                                                &none             &kp LS(COMMA)          &kp LS(PERIOD)       &kp LS(INT3)      &kp INT3
-&kp LS(N1)        &kp LS(SLASH)     &kp LS(N8)        &kp LS(N9)        &none             &none          &kp LS(APOSTROPHE)  &kp LS(N5)        &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(N2)        &kp LS(N7)
-&kp LS(EQUAL)     &kp LEFT_BRACKET  &kp LS(N3)        &kp LS(INT1)      &kp LS(N4)        &kp EQUAL      &kp LS(SEMICOLON)   &kp MINUS         &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp SEMICOLON     &kp APOSTROPHE
-&none             &none             &none             &none             &none             &none          &none               &none                                                                           &none
+&none          &kp SLASH         &kp LS(N6)  &kp LS(MINUS)  &none                                          &none       &kp LS(COMMA)          &kp LS(PERIOD)       &kp LS(INT3)   &kp INT3
+&kp LS(N1)     &kp LS(SLASH)     &kp LS(N8)  &kp LS(N9)     &none       &none          &kp LS(APOSTROPHE)  &kp LS(N5)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(N2)     &kp LS(N7)
+&kp LS(EQUAL)  &kp LEFT_BRACKET  &kp LS(N3)  &kp LS(INT1)   &kp LS(N4)  &kp EQUAL      &kp LS(SEMICOLON)   &kp MINUS   &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp SEMICOLON  &kp APOSTROPHE
+&none          &none             &none       &none          &none       &none          &none               &none                                                                  &none
             >;
         };
 
@@ -138,15 +138,6 @@
 &none         &none           &none         &none  &none  &none      &kp LC(KP_PLUS)  &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
 &none         &none           &none         &none  &none  &none      &kp LC(MINUS)    &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
 &bt BT_CLR    &bt BT_CLR_ALL  &none         &none  &none  &none      &none            &none                                                           &none
-            >;
-        };
-
-        SYMBOLS_BK {
-            bindings = <
-&none            &kp SLASH     &kp AMPERSAND         &kp EQUAL              &none                                    &none        &kp LESS_THAN     &kp GREATER_THAN   &kp PIPE           &kp BACKSLASH
-&kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none       &none          &kp ASTERISK  &kp PERCENT  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
-&kp TILDE        &kp AT_SIGN   &kp HASH              &kp UNDERSCORE         &kp DOLLAR  &kp CARET      &kp PLUS      &kp MINUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON      &kp COLON
-&none            &none         &none                 &none                  &none       &none          &none         &none                                                                &none
             >;
         };
     };
