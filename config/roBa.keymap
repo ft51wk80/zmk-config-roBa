@@ -107,10 +107,10 @@
 
         SYMBOLS {
             bindings = <
-&none              &kp SLASH         &kp LS(NUMBER_6)     &kp LS(MINUS)         &none                                    &none          &kp LS(COMMA)      &kp LS(PERIOD)     &kp LS(YEN)        &kp YEN
-&kp LS(NUMBER_1)   &kp LS(SLASH)     &kp LS(NUMBER_8)     &kp LS(NUMBER_9)     &none       &none          &kp LS(APOSTROPHE) &kp LS(NUMBER_5) &kp LS(RIGHT_BRACKET) &kp LS(NON_US_HASH) &kp LS(NUMBER_2)  &kp LS(NUMBER_7)
-&kp LS(EQUAL)      &kp LEFT_BRACKET  &kp LS(NUMBER_3)     &kp RO               &kp LS(NUMBER_4)  &kp EQUAL  &kp LS(SEMICOLON) &kp MINUS    &kp RIGHT_BRACKET     &kp NON_US_HASH      &kp SEMICOLON      &kp APOSTROPHE
-&none              &none             &none                 &none                &none       &none          &none             &none                                                                &none
+&none             &kp SLASH         &kp LS(NUMBER_6)  &kp LS(MINUS)     &none                                                &none             &kp LS(COMMA)          &kp LS(PERIOD)       &kp LS(YEN)       &kp BACKSLASH
+&kp LS(NUMBER_1)  &kp LS(SLASH)     &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none             &none          &kp LS(APOSTROPHE)  &kp LS(NUMBER_5)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(NUMBER_2)  &kp LS(NUMBER_7)
+&kp LS(EQUAL)     &kp LEFT_BRACKET  &kp LS(NUMBER_3)  &kp RO            &kp LS(NUMBER_4)  &kp EQUAL      &kp LS(SEMICOLON)   &kp MINUS         &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp SEMICOLON     &kp APOSTROPHE
+&none             &none             &none             &none             &none             &none          &none               &none                                                                           &none
             >;
         };
 
@@ -134,10 +134,10 @@
 
         OPERATIONS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &none  &none                            &none     &kp LG(TAB)       &none             &none             &none
-&none         &none           &none         &none  &none  &none      &kp LC(KP_PLUS)   &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
-&none         &none           &none         &none  &none  &none      &kp LC(MINUS)  &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
-&bt BT_CLR    &bt BT_CLR_ALL  &none         &none  &none  &none      &none          &none                                                           &none
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &none  &none                              &none     &kp LG(TAB)       &none             &none             &none
+&none         &none           &none         &none  &none  &none      &kp LC(KP_PLUS)  &mkp MB4  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&none         &none           &none         &none  &none  &none      &kp LC(MINUS)    &mkp MB5  &kp LC(Q)         &kp LC(W)         &none             &none
+&bt BT_CLR    &bt BT_CLR_ALL  &none         &none  &none  &none      &none            &none                                                           &none
             >;
         };
 
