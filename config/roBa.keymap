@@ -11,8 +11,8 @@
 &sl { release-after-ms = <150>; };
 
 &trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
+    automouse-layer = <2>;
+    scroll-layers = <1>;
 };
 
 / {
