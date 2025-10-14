@@ -11,20 +11,14 @@
 &sl { release-after-ms = <150>; };
 
 &trackball {
-    scroll-layers = <1>;
-    automouse-layer = <2>;
+    automouse-layer = <1>;
+    scroll-layers = <2>;
 };
 
 / {
     combos { compatible = "zmk,combos"; };
 
     macros {
-        to0_only: to0_only {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0>;
-            label = "TO0_ONLY";
-        };
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -88,13 +82,6 @@
             tapping-term-ms = <200>;
         };
 
-        mt_to0_hold: mt_to0_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_TO0_HOLD";
-            bindings = <&hold_key_to0>, <&to0_only>;
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
     };
 
     keymap {
@@ -114,7 +101,7 @@
 &to_layer_0 Q               &to_layer_0 L         &to_layer_0 U         &to_layer_0 COMMA            &to_layer_0 PERIOD                                                              &to_layer_0 F           &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
 &to_layer_0 E               &mkp_exit_AML MB2     &mkp_exit_AML MB3     &mkp_exit_AML MB1            &to_layer_0 MINUS       &to_layer_0 DEL                  &to_layer_0 ESCAPE     &to_layer_0 K           &mkp_exit_AML MB1  &mkp_exit_AML MB3   &mkp_exit_AML MB2  &to_layer_0 H
 &mt_to0_shift LEFT_SHIFT Z  &to_layer_0 X         &lt_to_layer_0 3 C    &to_layer_0 V                &to_layer_0 F7          &none                            &to_layer_0 TAB        &to_layer_0 G           &to_layer_0 D      &lt_to_layer_0 3 M  &to_layer_0 J      &mt_to0_shift LEFT_SHIFT B
-&mt_to0_hold LCTRL          &mt_to0_hold LEFT_WIN &mt_to0_hold LEFT_ALT &lt_to_layer_0 4 LANGUAGE_1  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &mt_to0_hold BACKSPACE &lt_to_layer_0 6 ENTER                                                            &none
+&mt_to0_shift LCTRL BACKSPACE &mt_to0_shift LEFT_WIN BACKSPACE &mt_to0_shift LEFT_ALT BACKSPACE &lt_to_layer_0 4 LANGUAGE_1  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &mt_to0_shift BACKSPACE BACKSPACE &lt_to_layer_0 6 ENTER                                                            &none
             >;
         };
 
