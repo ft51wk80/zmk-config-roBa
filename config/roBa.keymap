@@ -75,10 +75,10 @@
 
         mt_shift_to0: mt_shift_to0 {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_SHIFT_TO_0";
+            label = "MT_SHIFT_TO0";
             bindings = <&hold_shift_to0>, <&to_layer_0>;
 
-            #binding-cells = <1>; // keycode for tap path
+            #binding-cells = <1>;
             tapping-term-ms = <200>;
         };
     };
