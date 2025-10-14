@@ -41,13 +41,6 @@
             label = "MKP_EXIT_AML";
         };
 
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
-        };
-
         hold_key_to0: hold_key_to0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -70,7 +63,7 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
         };
 
         mt_to0_shift: mt_to0_shift {
@@ -79,7 +72,7 @@
             bindings = <&hold_key_to0>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
         };
 
     };
