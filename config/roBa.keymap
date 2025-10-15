@@ -140,23 +140,5 @@
 &bt BT_CLR    &bt BT_CLR_ALL  &none         &none  &none  &none      &none            &none                                                            &none
             >;
         };
-
-        layer_7 {
-            bindings = <
-&none          &kp SLASH         &kp LS(N6)  &kp LS(MINUS)  &none                                          &none       &kp LS(COMMA)          &kp LS(PERIOD)       &kp LS(INT3)    &kp INT3
-&kp LS(N1)     &kp LS(SLASH)     &kp LS(N8)  &kp LS(N9)     &none       &none          &kp LS(APOSTROPHE)  &kp LS(N5)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(N2)      &kp LS(N7)
-&kp LS(EQUAL)  &kp LEFT_BRACKET  &kp LS(N3)  &kp LS(INT1)   &kp LS(N4)  &kp EQUAL      &kp LS(SEMICOLON)   &kp MINUS   &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp APOSTROPHE  &kp SEMICOLON
-&none          &none             &none       &none          &none       &none          &none               &none                                                                   &none
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&kp LCTRL    &kp SLASH       &kp AT_SIGN           &kp HASH               &none                              &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none              &none
-&none        &kp UNDERSCORE  &kp QUESTION          &kp EXCLAMATION        &kp TILDE  &none      &kp PERCENT  &kp ASTERISK  &kp COLON         &kp SEMICOLON      &kp DOUBLE_QUOTES  &kp SQT
-&kp INT_YEN  &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &none      &kp MINUS    &kp PLUS      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE           &kp AMPERSAND
-&none        &none           &none                 &none                  &none      &none      &none        &none                                                                 &kp NON_US_BACKSLASH
-            >;
-        };
     };
 };
