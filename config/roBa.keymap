@@ -78,6 +78,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LT_MO_TO";
             bindings = <&mo>, <&to>;
+
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
@@ -100,16 +101,16 @@
 &to_layer_0 Q         &to_layer_0 L              &to_layer_0 U              &to_layer_0 COMMA            &to_layer_0 PERIOD                                                                    &to_layer_0 F  &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
 &to_layer_0 E         &mkp_exit_AML MB2          &mkp_exit_AML MB3          &mkp_exit_AML MB1            &to_layer_0 MINUS       &to_layer_0 DEL                  &to_layer_0 ESCAPE           &to_layer_0 K  &mkp_exit_AML MB1  &mkp_exit_AML MB3   &mkp_exit_AML MB2  &to_layer_0 H
 &mt_to0 LEFT_SHIFT Z  &to_layer_0 X              &lt_to_layer_0 2 C         &to_layer_0 V                &to_layer_0 F7          &none                            &to_layer_0 TAB              &to_layer_0 G  &to_layer_0 D      &lt_to_layer_0 2 M  &to_layer_0 J      &mt_to0 LEFT_SHIFT B
-&mt_to0 LCTRL LCTRL   &mt_to0 LEFT_WIN LEFT_WIN  &mt_to0 LEFT_ALT LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_1  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &mt_to0 BACKSPACE BACKSPACE  &lt_mo_to 6 0                                                             &mt_to0 LCTRL LCTRL
+&mt_to0 LCTRL LCTRL   &mt_to0 LEFT_WIN LEFT_WIN  &mt_to0 LEFT_ALT LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_1  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &mt_to0 BACKSPACE BACKSPACE  &lt_mo_to 6 0                                                            &mt_to0 LCTRL LCTRL
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans              &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML LCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans              &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                      &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp HOME  &trans  &kp END  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
             >;
         };
 
