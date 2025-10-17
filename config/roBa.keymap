@@ -146,7 +146,16 @@
 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &none  &none                              &kp LC(T)  &kp LEFT_ALT      &kp TAB           &kp LG(TAB)       &kp PRINTSCREEN
 &none         &none           &none         &none  &none  &none      &kp LC(KP_PLUS)  &mkp MB4   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
 &none         &none           &none         &none  &none  &none      &kp LC(MINUS)    &mkp MB5   &kp LC(LS(TAB))   &kp LC(TAB)       &kp LC(W)         &none
-&bt BT_CLR    &bt BT_CLR_ALL  &none         &none  &none  &none      &none            &none                                                            &kp LA(F4)
+&bt BT_CLR    &bt BT_CLR_ALL  &none         &none  &none  &to 7      &none            &none                                                            &kp LA(F4)
+            >;
+        };
+
+        GAME {
+            bindings = <
+&kp N1     &kp N2  &kp N3    &kp N4  &kp N5                         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+&kp TAB    &kp Q   &kp W     &kp E   &kp R      &kp T        &kp Y  &kp U   &kp I   &kp O   &kp P   &none
+&kp LSHFT  &kp A   &kp S     &kp D   &kp F      &kp G        &kp H  &kp J   &kp K   &kp L   &none   &none
+&kp LCTRL  &none   &kp LALT  &none   &kp SPACE  &kp ESC      &none  &to 0                           &none
             >;
         };
     };
