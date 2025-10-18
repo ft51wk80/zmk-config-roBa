@@ -89,19 +89,28 @@
 
         DEFAULT {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA      &kp PERIOD                                                                            &kp F                   &kp W  &kp R               &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O          &kp MINUS               &kp TAB                          &kp ESCAPE                   &kp K                   &kp T  &lt_to_layer_0 2 N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &none                   &kp F7                           &none                        &kp G                   &kp D  &kp M               &kp J  &mt LEFT_SHIFT B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 4 LANGUAGE_2      &lt_to_layer_0 5 LANGUAGE_1  &lt_to_layer_0 6 ENTER                                    &kp DELETE
+&kp Q      &kp L         &kp U           &kp COMMA      &kp PERIOD                                                                            &kp F                   &kp W  &kp R               &kp Y  &kp P
+&kp E      &kp I         &kp A           &kp O          &kp MINUS               &kp TAB                          &kp ESCAPE                   &kp K                   &kp T  &lt_to_layer_0 3 N  &kp S  &kp H
+&kp Z      &kp X         &kp C           &kp V          &none                   &kp F7                           &kp DELETE                   &kp G                   &kp D  &kp M               &kp J  &kp B
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp BACKSPACE  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_to_layer_0 7 ENTER                                    &kp LEFT_WIN
             >;
         };
 
         MOUSE {
             bindings = <
-&to_layer_0 Q         &to_layer_0 L              &to_layer_0 U              &to_layer_0 COMMA            &to_layer_0 PERIOD                                                                    &to_layer_0 F  &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
-&to_layer_0 E         &mkp_exit_AML MB2          &mkp_exit_AML MB3          &mkp_exit_AML MB1            &to_layer_0 MINUS       &to_layer_0 TAB                  &to_layer_0 ESCAPE           &to_layer_0 K  &mkp_exit_AML MB1  &lt_to_layer_0 2 N  &mkp_exit_AML MB2  &to_layer_0 H
-&mt_to0 LEFT_SHIFT Z  &to_layer_0 X              &lt_to_layer_0 2 C         &to_layer_0 V                &to 0                   &to_layer_0 F7                   &to 0                        &to_layer_0 G  &to_layer_0 D      &mkp_exit_AML MB3   &to_layer_0 J      &mt_to0 LEFT_SHIFT B
-&mt_to0 LCTRL LCTRL   &mt_to0 LEFT_WIN LEFT_WIN  &mt_to0 LEFT_ALT LEFT_ALT  &mt_to0 BACKSPACE BACKSPACE  &lt_to_layer_0 3 SPACE  &lt_to_layer_0 4 LANGUAGE_2      &lt_to_layer_0 5 LANGUAGE_1  &lt_mo_to 6 0                                                            &to_layer_0 DEL
+&to_layer_0 Q        &to_layer_0 L              &to_layer_0 U                  &to_layer_0 COMMA            &to_layer_0 PERIOD                                                                    &to_layer_0 F  &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
+&to_layer_0 E        &to_layer_0 I              &to_layer_0 A                  &to_layer_0 O                &to_layer_0 MINUS       &to_layer_0 TAB                  &to_layer_0 ESCAPE           &to_layer_0 K  &mkp_exit_AML MB1  &lt_to_layer_0 3 N  &mkp_exit_AML MB2  &to_layer_0 H
+&to_layer_0 Z        &to_layer_0 X              &to_layer_0 C                  &to_layer_0 V                &to 0                   &to_layer_0 F7                   &to_layer_0 DEL              &to_layer_0 G  &to_layer_0 D      &mkp_exit_AML MB3   &to_layer_0 J      &to_layer_0 B
+&mt_to0 LCTRL LCTRL  &mt_to0 LEFT_ALT LEFT_ALT  &mt_to0 LEFT_SHIFT LEFT_SHIFT  &mt_to0 BACKSPACE BACKSPACE  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_mo_to 7 0                                                            &to_layer_0 LEFT_WIN
+            >;
+        };
+
+        GAME {
+            bindings = <
+&kp N1     &kp N2        &kp N3          &kp N4  &kp N5                         &kp N6  &kp N7    &kp N8         &kp N9    &kp N0
+&kp TAB    &kp Q         &kp W           &kp E   &kp R      &kp T        &none  &none   &mkp MB1  &lt_mo_to 3 2  &mkp MB2  &none
+&kp LSHFT  &kp A         &kp S           &kp D   &kp F      &kp G        &none  &none   &none     &mkp MB3       &none     &none
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none   &kp SPACE  &kp ESC      &none  &to 0                                      &kp LEFT_WIN
             >;
         };
 
@@ -134,10 +143,10 @@
 
         TEXT_EDIT {
             bindings = <
-&none                 &kp LC(B)      &kp LC(I)     &kp LC(T)  &none                                     &none  &none     &none         &none      &none
-&kp LC(A)             &kp LC(S)      &kp LC(D)     &kp LC(F)  &kp LC(LS(F))  &none               &none  &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
-&mt LEFT_SHIFT LC(Z)  &kp LC(LS(X))  &kp LC(X)     &kp LC(C)  &kp LC(V)      &none               &none  &none  &kp HOME  &kp DOWN      &kp END    &none
-&kp LCTRL             &kp LEFT_WIN   &kp LEFT_ALT  &none      &none          &kp LEFT_SHIFT      &none  &none                                     &none
+&none      &kp LC(B)     &kp LC(I)       &kp LC(T)  &none                        &none  &none     &none         &none      &none
+&kp LC(A)  &kp LC(S)     &kp LC(D)       &kp LC(F)  &none      &none      &none  &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
+&kp LS(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &kp LC(V)  &none      &none  &none  &kp HOME  &kp DOWN      &kp END    &none
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none      &none      &none      &none  &none                                     &none
             >;
         };
 
@@ -146,16 +155,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &none  &none                              &kp LC(R)  &kp LEFT_ALT      &kp TAB           &kp LG(TAB)       &kp PRINTSCREEN
 &none         &none           &none          &none  &none  &none      &kp LC(KP_PLUS)  &mkp MB4   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
 &none         &none           &none          &none  &none  &none      &kp LC(MINUS)    &mkp MB5   &kp LC(LS(TAB))   &kp LC(TAB)       &kp LC(W)         &kp LC(T)
-&bt BT_CLR    &bt BT_CLR_ALL  &bt BT_DISC 0  &none  &none  &to 7      &none            &none                                                            &kp LA(F4)
-            >;
-        };
-
-        GAME {
-            bindings = <
-&kp N1     &kp N2  &kp N3    &kp N4  &kp N5                         &kp N6  &kp N7    &kp N8         &kp N9    &kp N0
-&kp TAB    &kp Q   &kp W     &kp E   &kp R      &kp T        &none  &none   &mkp MB1  &lt_mo_to 2 7  &mkp MB2  &none
-&kp LSHFT  &kp A   &kp S     &kp D   &kp F      &kp G        &none  &none   &none     &mkp MB3       &none     &none
-&kp LCTRL  &none   &kp LALT  &none   &kp SPACE  &kp ESC      &none  &to 0                                      &none
+&bt BT_CLR    &bt BT_CLR_ALL  &bt BT_DISC 0  &to 2  &none  &none      &none            &none                                                            &kp LA(F4)
             >;
         };
     };
