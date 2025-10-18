@@ -89,10 +89,10 @@
 
         DEFAULT {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R               &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                        &kp MINUS                    &kp TAB            &kp ESCAPE              &kp K                   &kp T  &lt_to_layer_0 2 N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp F7                       &kp DEL            &kp TAB                 &kp G                   &kp D  &kp M               &kp J  &mt LEFT_SHIFT B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 4 LANGUAGE_1  &kp BACKSPACE      &lt_to_layer_0 5 SPACE  &lt_to_layer_0 6 ENTER                                    &kp LEFT_CONTROL
+&none           &kp Q         &kp L         &kp U          &kp F                                          &kp W      &kp R  &kp Y  &kp P  &kp ESC
+&kp TAB         &kp E         &kp I         &kp A          &kp O      &kp MINUS           &kp K           &kp T      &kp N  &kp S  &kp H  &kp COMMA
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C          &kp V      &kp F7              &kp G           &kp D      &kp M  &kp J  &kp B  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &kp SPACE  &kp LANGUAGE_2      &kp LANGUAGE_1  &kp ENTER                       &kp DELETE
             >;
         };
 
