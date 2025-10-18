@@ -90,18 +90,18 @@
         DEFAULT {
             bindings = <
 &kp Q             &kp L         &kp U         &kp COMMA                    &kp PERIOD                                                              &kp F                   &kp W  &kp R               &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                        &kp MINUS               &kp TAB            &kp ESCAPE                   &kp K                   &kp T  &lt_to_layer_0 2 N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp F7                  &kp DEL            &kp TAB                      &kp G                   &kp D  &kp M               &kp J  &mt LEFT_SHIFT B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 4 SPACE  &kp BACKSPACE      &lt_to_layer_0 5 LANGUAGE_1  &lt_to_layer_0 6 ENTER                                    &kp LEFT_CONTROL
+&kp E             &kp I         &kp A         &kp O                        &kp MINUS                    &kp TAB            &kp ESCAPE              &kp K                   &kp T  &lt_to_layer_0 2 N  &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp F7                       &kp DEL            &kp TAB                 &kp G                   &kp D  &kp M               &kp J  &mt LEFT_SHIFT B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 4 LANGUAGE_1  &kp BACKSPACE      &lt_to_layer_0 5 SPACE  &lt_to_layer_0 6 ENTER                                    &kp LEFT_CONTROL
             >;
         };
 
         MOUSE {
             bindings = <
 &to_layer_0 Q         &to_layer_0 L              &to_layer_0 U              &to_layer_0 COMMA            &to_layer_0 PERIOD                                                                    &to_layer_0 F  &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
-&to_layer_0 E         &mkp_exit_AML MB2          &mkp_exit_AML MB3          &mkp_exit_AML MB1            &to_layer_0 MINUS       &to_layer_0 TAB                  &to_layer_0 ESCAPE           &to_layer_0 K  &mkp_exit_AML MB1  &lt_to_layer_0 2 N  &mkp_exit_AML MB2  &to_layer_0 H
-&mt_to0 LEFT_SHIFT Z  &to_layer_0 X              &lt_to_layer_0 2 C         &to_layer_0 V                &to_layer_0 F7          &to_layer_0 DEL                  &to_layer_0 TAB              &to_layer_0 G  &to_layer_0 D      &mkp_exit_AML MB3   &to_layer_0 J      &mt_to0 LEFT_SHIFT B
-&mt_to0 LCTRL LCTRL   &mt_to0 LEFT_WIN LEFT_WIN  &mt_to0 LEFT_ALT LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 4 SPACE  &mt_to0 BACKSPACE BACKSPACE      &lt_to_layer_0 5 LANGUAGE_1  &lt_mo_to 6 0                                                            &mt_to0 LCTRL LCTRL
+&to_layer_0 E         &mkp_exit_AML MB2          &mkp_exit_AML MB3          &mkp_exit_AML MB1            &to_layer_0 MINUS            &to_layer_0 TAB                  &to_layer_0 ESCAPE      &to_layer_0 K  &mkp_exit_AML MB1  &lt_to_layer_0 2 N  &mkp_exit_AML MB2  &to_layer_0 H
+&mt_to0 LEFT_SHIFT Z  &to_layer_0 X              &lt_to_layer_0 2 C         &to_layer_0 V                &to_layer_0 F7               &to_layer_0 DEL                  &to_layer_0 TAB         &to_layer_0 G  &to_layer_0 D      &mkp_exit_AML MB3   &to_layer_0 J      &mt_to0 LEFT_SHIFT B
+&mt_to0 LCTRL LCTRL   &mt_to0 LEFT_WIN LEFT_WIN  &mt_to0 LEFT_ALT LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 4 LANGUAGE_1  &mt_to0 BACKSPACE BACKSPACE      &lt_to_layer_0 5 SPACE  &lt_mo_to 6 0                                                            &mt_to0 LCTRL LCTRL
             >;
         };
 
