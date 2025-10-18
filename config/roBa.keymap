@@ -143,10 +143,10 @@
 
         TEXT_EDIT {
             bindings = <
-&none      &kp LC(B)     &kp LC(I)       &kp LC(T)  &none                        &none  &none     &none         &none      &none
-&kp LC(A)  &kp LC(S)     &kp LC(D)       &kp LC(F)  &none      &none      &none  &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
-&kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &kp LC(V)  &none      &none  &none  &kp HOME  &kp DOWN      &kp END    &none
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none      &none      &none      &none  &none                                     &none
+&none      &kp LC(B)     &kp LC(I)       &kp LC(T)  &none                    &none  &none     &none         &none      &none
+&kp LC(A)  &kp LC(S)     &kp LC(D)       &kp LC(F)  &none  &none      &none  &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
+&kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &none  &none      &none  &none  &kp HOME  &kp DOWN      &kp END    &none
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none      &none  &none      &none  &none                                     &none
             >;
         };
 
