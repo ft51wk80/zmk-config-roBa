@@ -89,28 +89,28 @@
 
         DEFAULT {
             bindings = <
-&kp Q      &kp L         &kp U           &kp COMMA      &kp PERIOD                                                                            &kp F                   &kp W  &kp R               &kp Y  &kp P
-&kp E      &kp I         &kp A           &kp O          &kp MINUS               &kp TAB                          &kp ESCAPE                   &kp K                   &kp T  &lt_to_layer_0 3 N  &kp S  &kp H
-&kp Z      &kp X         &kp C           &kp V          &none                   &kp F7                           &kp DELETE                   &kp G                   &kp D  &kp M               &kp J  &kp B
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp BACKSPACE  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_to_layer_0 7 ENTER                                    &kp LEFT_WIN
+&kp Q      &kp L         &kp U          &kp COMMA       &kp PERIOD                                                                            &kp F                   &kp W  &kp R               &kp Y  &kp P
+&kp E      &kp I         &kp A          &kp O           &kp MINUS               &kp TAB                          &kp ESCAPE                   &kp K                   &kp T  &lt_to_layer_0 3 N  &kp S  &kp H
+&kp Z      &kp X         &kp C          &kp V           &none                   &kp F7                           &kp DELETE                   &kp G                   &kp D  &kp M               &kp J  &kp B
+&kp LCTRL  &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_to_layer_0 7 ENTER                                    &kp LEFT_WIN
             >;
         };
 
         MOUSE {
             bindings = <
-&to_layer_0 Q        &to_layer_0 L              &to_layer_0 U                  &to_layer_0 COMMA            &to_layer_0 PERIOD                                                                    &to_layer_0 F  &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
-&to_layer_0 E        &to_layer_0 I              &to_layer_0 A                  &to_layer_0 O                &to_layer_0 MINUS       &to_layer_0 TAB                  &to_layer_0 ESCAPE           &to_layer_0 K  &mkp_exit_AML MB1  &lt_to_layer_0 3 N  &mkp_exit_AML MB2  &to_layer_0 H
-&to_layer_0 Z        &to_layer_0 X              &to_layer_0 C                  &to_layer_0 V                &to 0                   &to_layer_0 F7                   &to_layer_0 DEL              &to_layer_0 G  &to_layer_0 D      &mkp_exit_AML MB3   &to_layer_0 J      &to_layer_0 B
-&mt_to0 LCTRL LCTRL  &mt_to0 LEFT_ALT LEFT_ALT  &mt_to0 LEFT_SHIFT LEFT_SHIFT  &mt_to0 BACKSPACE BACKSPACE  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_mo_to 7 0                                                            &to_layer_0 LEFT_WIN
+&to_layer_0 Q        &to_layer_0 L              &to_layer_0 U                &to_layer_0 COMMA              &to_layer_0 PERIOD                                                                    &to_layer_0 F  &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
+&to_layer_0 E        &to_layer_0 I              &to_layer_0 A                &to_layer_0 O                  &to_layer_0 MINUS       &to_layer_0 TAB                  &to_layer_0 ESCAPE           &to_layer_0 K  &mkp_exit_AML MB1  &lt_to_layer_0 3 N  &mkp_exit_AML MB2  &to_layer_0 H
+&to_layer_0 Z        &to_layer_0 X              &to_layer_0 C                &to_layer_0 V                  &to 0                   &to_layer_0 F7                   &to_layer_0 DEL              &to_layer_0 G  &to_layer_0 D      &mkp_exit_AML MB3   &to_layer_0 J      &to_layer_0 B
+&mt_to0 LCTRL LCTRL  &mt_to0 LEFT_ALT LEFT_ALT  &mt_to0 BACKSPACE BACKSPACE  &mt_to0 LEFT_SHIFT LEFT_SHIFT  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_mo_to 7 0                                                            &to_layer_0 LEFT_WIN
             >;
         };
 
         GAME {
             bindings = <
-&kp N1     &kp N2        &kp N3          &kp N4  &kp N5                         &kp N6  &kp N7    &kp N8         &kp N9    &kp N0
-&kp TAB    &kp Q         &kp W           &kp E   &kp R      &kp T        &none  &none   &mkp MB1  &lt_mo_to 3 2  &mkp MB2  &none
-&kp LSHFT  &kp A         &kp S           &kp D   &kp F      &kp G        &none  &none   &none     &mkp MB3       &none     &none
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none   &kp SPACE  &kp ESC      &none  &to 0                                      &kp LEFT_WIN
+&kp N1     &kp N2        &kp N3  &kp N4  &kp N5                         &kp N6  &kp N7    &kp N8         &kp N9    &kp N0
+&kp TAB    &kp Q         &kp W   &kp E   &kp R      &kp T        &none  &none   &mkp MB1  &lt_mo_to 3 2  &mkp MB2  &none
+&kp LSHFT  &kp A         &kp S   &kp D   &kp F      &kp G        &none  &none   &none     &mkp MB3       &none     &none
+&kp LCTRL  &kp LEFT_ALT  &none   &none   &kp SPACE  &kp ESC      &none  &to 0                                      &kp LEFT_WIN
             >;
         };
 
@@ -143,10 +143,10 @@
 
         TEXT_EDIT {
             bindings = <
-&none      &kp LC(B)     &kp LC(I)       &kp LC(T)  &none                    &none  &none     &none         &none      &none
-&kp LC(A)  &kp LC(S)     &kp LC(D)       &kp LC(F)  &none  &none      &none  &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
-&kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &none  &none      &none  &none  &kp HOME  &kp DOWN      &kp END    &none
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none      &none  &none      &none  &none                                     &none
+&none      &kp LC(B)     &kp LC(I)  &kp LC(T)       &none                    &none  &none     &none         &none      &none
+&kp LC(A)  &kp LC(S)     &kp LC(D)  &kp LC(F)       &none  &none      &none  &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &none
+&kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)       &none  &none      &none  &none  &kp HOME  &kp DOWN      &kp END    &none
+&kp LCTRL  &kp LEFT_ALT  &none      &kp LEFT_SHIFT  &none  &none      &none  &none                                     &none
             >;
         };
 
