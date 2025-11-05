@@ -143,19 +143,19 @@
 
         TEXT_EDIT {
             bindings = <
-&trans     &kp LC(B)     &kp LC(T)  &kp LC(I)       &trans                      &trans  &trans    &trans        &trans     &trans
-&kp LC(A)  &kp LC(S)     &kp LC(D)  &kp LC(F)       &trans  &trans      &trans  &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans
-&kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)       &trans  &trans      &trans  &trans  &kp HOME  &kp DOWN      &kp END    &trans
-&kp LCTRL  &kp LEFT_ALT  &trans     &kp LEFT_SHIFT  &trans  &trans      &trans  &trans                                     &trans
+&kp LC(LS(P))  &kp LC(B)     &kp LC(T)  &kp LC(I)       &kp LC(R)                      &trans  &trans    &trans        &trans     &trans
+&kp LC(A)      &kp LC(S)     &kp LC(D)  &kp LC(F)       &trans     &trans      &trans  &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans
+&kp LC(Z)      &kp LC(X)     &kp LC(C)  &kp LC(V)       &trans     &trans      &trans  &trans  &kp HOME  &kp DOWN      &kp END    &trans
+&kp LCTRL      &kp LEFT_ALT  &trans     &kp LEFT_SHIFT  &trans     &trans      &trans  &trans                                     &trans
             >;
         };
 
         OPERATIONS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &trans  &trans                               &kp LC(R)  &kp LEFT_ALT      &kp TAB           &kp LG(TAB)       &kp PRINTSCREEN
-&trans        &trans          &trans         &trans  &trans  &trans      &kp LC(KP_PLUS)  &mkp MB4   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
-&trans        &trans          &trans         &trans  &trans  &trans      &kp LC(MINUS)    &mkp MB5   &kp LC(LS(TAB))   &kp LC(TAB)       &kp LC(W)         &kp LC(T)
-&bt BT_CLR    &bt BT_CLR_ALL  &bt BT_DISC 0  &to 2   &trans  &trans      &trans           &trans                                                           &kp LA(F4)
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &trans          &trans                               &kp LC(R)  &kp LEFT_ALT      &kp TAB           &kp LG(TAB)       &kp PRINTSCREEN
+&trans        &trans          &trans         &trans          &trans  &trans      &kp LC(KP_PLUS)  &mkp MB4   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&trans        &trans          &trans         &trans          &trans  &trans      &kp LC(MINUS)    &mkp MB5   &kp LC(LS(TAB))   &kp LC(TAB)       &kp LC(W)         &kp LC(T)
+&bt BT_CLR    &bt BT_CLR_ALL  &bt BT_DISC 0  &kp LEFT_SHIFT  &trans  &to 2       &trans           &trans                                                           &kp LA(F4)
             >;
         };
     };
