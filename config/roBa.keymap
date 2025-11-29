@@ -91,71 +91,71 @@
             bindings = <
 &kp Q      &kp L         &kp U          &kp COMMA       &kp PERIOD                                                                            &kp F                   &kp W  &kp R               &kp Y  &kp P
 &kp E      &kp I         &kp A          &kp O           &kp MINUS               &kp TAB                          &kp ESCAPE                   &kp K                   &kp T  &lt_to_layer_0 3 N  &kp S  &kp H
-&kp Z      &kp X         &kp C          &kp V           &trans                  &kp F7                           &kp DELETE                   &kp G                   &kp D  &kp M               &kp J  &kp B
+&kp Z      &kp X         &kp C          &kp V           &none                   &kp F7                           &kp DELETE                   &kp G                   &kp D  &kp M               &kp J  &kp B
 &kp LCTRL  &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_to_layer_0 7 ENTER                                    &kp LEFT_WIN
             >;
         };
 
         MOUSE {
             bindings = <
-&to_layer_0 Q        &to_layer_0 L              &to_layer_0 U                &to_layer_0 COMMA              &to_layer_0 PERIOD                                                                    &to_layer_0 F  &to_layer_0 W      &to_layer_0 R       &to_layer_0 Y      &to_layer_0 P
-&to_layer_0 E        &to_layer_0 I              &to_layer_0 A                &to_layer_0 O                  &to_layer_0 MINUS       &to_layer_0 TAB                  &to_layer_0 ESCAPE           &to_layer_0 K  &mkp_exit_AML MB1  &lt_to_layer_0 3 N  &mkp_exit_AML MB2  &to_layer_0 H
-&to_layer_0 Z        &to_layer_0 X              &to_layer_0 C                &to_layer_0 V                  &to 0                   &to_layer_0 F7                   &to_layer_0 DEL              &to_layer_0 G  &to_layer_0 D      &mkp_exit_AML MB3   &to_layer_0 J      &to_layer_0 B
-&mt_to0 LCTRL LCTRL  &mt_to0 LEFT_ALT LEFT_ALT  &mt_to0 BACKSPACE BACKSPACE  &mt_to0 LEFT_SHIFT LEFT_SHIFT  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_mo_to 7 0                                                            &to_layer_0 LEFT_WIN
+&none                &none                      &none                        &none                          &none                                                                                 &none          &none     &none     &none     &none
+&none                &none                      &none                        &none                          &none                   &to_layer_0 TAB                  &to_layer_0 ESCAPE           &none          &mkp MB1  &to 3     &mkp MB2  &none
+&none                &none                      &none                        &none                          &none                   &to_layer_0 F7                   &to_layer_0 DEL              &none          &none     &mkp MB3  &none     &none
+&mt_to0 LCTRL LCTRL  &mt_to0 LEFT_ALT LEFT_ALT  &mt_to0 BACKSPACE BACKSPACE  &mt_to0 LEFT_SHIFT LEFT_SHIFT  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 LANGUAGE_2      &lt_to_layer_0 6 LANGUAGE_1  &lt_mo_to 7 0                                &to_layer_0 LEFT_WIN
             >;
         };
 
         GAME {
             bindings = <
 &kp N1     &kp N2        &kp N3  &kp N4  &kp N5                              &kp N6  &kp N7    &kp N8         &kp N9    &kp N0
-&kp TAB    &kp Q         &kp W   &kp E   &kp R      &kp T        &kp ESCAPE  &trans  &mkp MB1  &lt_mo_to 3 2  &mkp MB2  &trans
-&kp LSHFT  &kp A         &kp S   &kp D   &kp F      &kp G        &trans      &trans  &trans    &mkp MB3       &trans    &trans
-&kp LCTRL  &kp LEFT_ALT  &trans  &trans  &kp SPACE  &kp ESC      &trans      &to 0                                      &kp LEFT_WIN
+&kp TAB    &kp Q         &kp W   &kp E   &kp R      &kp T        &kp ESCAPE  &none   &mkp MB1  &lt_mo_to 3 2  &mkp MB2  &none
+&kp LSHFT  &kp A         &kp S   &kp D   &kp F      &kp G        &none       &none   &none     &mkp MB3       &none     &none
+&kp LCTRL  &kp LEFT_ALT  &none   &none   &kp SPACE  &kp ESC      &none       &to 0                                      &kp LEFT_WIN
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans        &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(HOME)  &trans  &kp LC(END)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&none  &none  &none  &none  &none                    &none  &none         &none  &none        &none
+&none  &none  &none  &none  &none  &none      &none  &none  &kp LC(HOME)  &none  &kp LC(END)  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none         &none  &none        &none
+&none  &none  &none  &none  &none  &none      &none  &none                                    &none
             >;
         };
 
         NUM {
             bindings = <
-&trans                      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                      &trans  &kp F9  &kp F10  &kp F11  &kp F12
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans      &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans      &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4
-&trans                      &trans           &trans           &trans           &trans  &trans      &trans  &trans                            &trans
+&none                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                    &none  &kp F9  &kp F10  &kp F11  &kp F12
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none      &none  &none  &kp F5  &kp F6   &kp F7   &kp F8
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none      &none  &none  &kp F1  &kp F2   &kp F3   &kp F4
+&none                       &none            &none            &none            &none  &none      &none  &none                            &none
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp EQUAL    &kp SLASH                &kp LEFT_BRACKET  &kp LS(NUMBER_3)  &trans                                       &trans                &kp RIGHT_BRACKET    &kp NON_US_HASH      &trans                   &trans
-&trans       &kp LS(INTERNATIONAL_1)  &kp LS(SLASH)     &kp LS(NUMBER_1)  &kp LS(EQUAL)  &trans      &kp LS(NUMBER_5)  &kp LS(SINGLE_QUOTE)  &kp SQT              &kp SEMICOLON        &kp LS(N2)               &kp LS(N7)
-&kp INT_YEN  &kp LS(NUMBER_4)         &kp LS(NUMBER_8)  &kp LS(N9)        &trans         &trans      &kp MINUS         &kp LS(SEMI)          &kp LS(RIGHT_BRACE)  &kp LS(NON_US_HASH)  &kp LS(INTERNATIONAL_3)  &kp LS(NUMBER_6)
-&trans       &trans                   &trans            &trans            &trans         &trans      &trans            &trans                                                                                   &kp INTERNATIONAL_3
+&kp EQUAL    &kp SLASH                &kp LEFT_BRACKET  &kp LS(NUMBER_3)  &none                                       &none                 &kp RIGHT_BRACKET    &kp NON_US_HASH      &none                    &none
+&none        &kp LS(INTERNATIONAL_1)  &kp LS(SLASH)     &kp LS(NUMBER_1)  &kp LS(EQUAL)  &none      &kp LS(NUMBER_5)  &kp LS(SINGLE_QUOTE)  &kp SQT              &kp SEMICOLON        &kp LS(N2)               &kp LS(N7)
+&kp INT_YEN  &kp LS(NUMBER_4)         &kp LS(NUMBER_8)  &kp LS(N9)        &none          &none      &kp MINUS         &kp LS(SEMI)          &kp LS(RIGHT_BRACE)  &kp LS(NON_US_HASH)  &kp LS(INTERNATIONAL_3)  &kp LS(NUMBER_6)
+&none        &none                    &none             &none             &none          &none      &none             &none                                                                                    &kp INTERNATIONAL_3
             >;
         };
 
         TEXT_EDIT {
             bindings = <
-&kp LC(LS(P))  &kp LC(B)     &kp LC(T)  &kp LC(I)       &kp LC(R)                      &trans  &trans    &trans        &trans     &trans
-&kp LC(A)      &kp LC(S)     &kp LC(D)  &kp LC(F)       &trans     &trans      &trans  &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans
-&kp LC(Z)      &kp LC(X)     &kp LC(C)  &kp LC(V)       &trans     &trans      &trans  &trans  &kp HOME  &kp DOWN      &kp END    &trans
-&kp LCTRL      &kp LEFT_ALT  &trans     &kp LEFT_SHIFT  &trans     &trans      &trans  &trans                                     &trans
+&kp LC(LS(P))  &kp LC(B)     &kp LC(T)  &kp LC(I)       &kp LC(R)                    &none  &none     &none         &none      &none
+&kp LC(A)      &kp LC(S)     &kp LC(D)  &kp LC(F)       &none      &none      &none  &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &none
+&kp LC(Z)      &kp LC(X)     &kp LC(C)  &kp LC(V)       &none      &none      &none  &none  &kp HOME  &kp DOWN      &kp END    &none
+&kp LCTRL      &kp LEFT_ALT  &none      &kp LEFT_SHIFT  &none      &none      &none  &none                                     &none
             >;
         };
 
         OPERATIONS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &trans          &trans                               &kp LC(R)  &kp LEFT_ALT      &kp TAB           &kp LG(TAB)       &kp PRINTSCREEN
-&trans        &trans          &trans         &trans          &trans  &trans      &kp LC(KP_PLUS)  &mkp MB4   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
-&trans        &trans          &trans         &trans          &trans  &trans      &kp LC(MINUS)    &mkp MB5   &kp LC(LS(TAB))   &kp LC(TAB)       &kp LC(W)         &kp LC(T)
-&bt BT_CLR    &bt BT_CLR_ALL  &bt BT_DISC 0  &kp LEFT_SHIFT  &trans  &to 2       &trans           &trans                                                           &kp LA(F4)
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &none           &none                              &kp LC(R)  &kp LEFT_ALT      &kp TAB           &kp LG(TAB)       &kp PRINTSCREEN
+&none         &none           &none          &none           &none  &none      &kp LC(KP_PLUS)  &mkp MB4   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&none         &none           &none          &none           &none  &none      &kp LC(MINUS)    &mkp MB5   &kp LC(LS(TAB))   &kp LC(TAB)       &kp LC(W)         &kp LC(T)
+&bt BT_CLR    &bt BT_CLR_ALL  &bt BT_DISC 0  &kp LEFT_SHIFT  &none  &to 2      &none            &none                                                            &kp LA(F4)
             >;
         };
     };
